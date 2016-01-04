@@ -1,0 +1,55 @@
+
+<style>
+.twtr-hd
+{
+	visibility:hidden !important;
+	height:0px !important;
+	margin-top:-15px !important; 
+}
+.twtr-widget twtr-widget-profile
+{
+	background-color:transparent !important;
+}
+.twtr-ft
+{visibility:hidden !important;
+}
+.twtr-widget twtr-widget-profile
+{
+	height:70px !important;
+}
+
+</style>
+
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+
+
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 1,
+  interval: 30000,
+  width: 'auto',
+  height: 'auto',
+  theme: {
+    shell: {
+      background: 'transparent',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: 'transparent',
+      color: '#000000',
+      links: '#ac5419'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('ISAC_INDIA').start();
+</script>
